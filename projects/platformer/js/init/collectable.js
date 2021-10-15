@@ -37,7 +37,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
-        createCollectable(type.steve, 200, 170, 6, 0.7);
+        createCollectable(type.kennedi, 200, 170, 6, 0.7);
+        createCollectable(type.steve, 500, 400)
+        createCollectable(type.max, 500, 200)
         
         
         
