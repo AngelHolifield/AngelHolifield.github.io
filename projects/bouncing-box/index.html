@@ -79,7 +79,7 @@
 				}else if (locationX < 0) { 
 					filo = filo *-1
 				}
-
+				 
 			};
 
 			/* 
@@ -89,7 +89,12 @@
 			*/
 			function handleBoxClick() {
 				changeBoxText (points = points + 1)
-				filo = filo + 10;
+				if (filo < 0)[
+					filo = filo - 419
+				]
+				else if (filo > 0)[
+					filo = filo + 419
+				]
 				locationX = 0
 				
 
