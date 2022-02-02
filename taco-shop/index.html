@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taco Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 3px solid gray;
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Taco Shop</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Menu</h3>
+                <div id="menu">
+                    <div id="three-tacos" class="menu-item">
+                        <h4> #1 - Three Tacos</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-phbs_RqH7HoN_2XLKiTXd0zTOeMGLncug&usqp=CAU">
+                        <h4>6.99</h4>
+                    </div>
+                    <div id="five-tacos" class="menu-item">
+                        <h4>#2 - Edible Taco Hat (Mexican Included)</h4>
+                        <img src="https://th.bing.com/th/id/R.6ad58f28cc4b68726bc0fc41e8a2a93b?rik=yw4VVjC0VnpY%2fQ&riu=http%3a%2f%2fwww.columbia.edu%2f%7ejpl2131%2flunch%2ftacohat.jpg&ehk=LrCCC4%2ffYB8X4pEE1Z72g8L7uJaZMj1qEHPypRK2boY%3d&risl=&pid=ImgRaw&r=0">
+                        <h4>9.99</h4>
+                    </div>
+                    <div id="knuckle-sandwhich" class="menu-item">
+                        <h4> #3 - Knuckle Sandwich</h4>
+                        <img src="https://th.bing.com/th/id/R.742e4827164873f14f305dc14856b3cf?rik=cRli9qJIzhcymQ&riu=http%3a%2f%2ffarm9.staticflickr.com%2f8058%2f8189701444_beb2921072_z.jpg&ehk=7GsVm5%2bcp3FgsWNbw3CvArZxyvzNnZSgcBDy9y68o4U%3d&risl=&pid=ImgRaw&r=0">
+                        <h4>Free</h4>
+                    </div>
+                    <div id="banana-burger" class="menu-item">
+                        <h4>#4 - Banana Burger</h4>
+                        <img src="https://th.bing.com/th/id/OIP.wsh5DQzKyOqnP0bhGZ1R-gHaE5?pid=ImgDet&rs=1">
+                        <h4>100 dabloons</h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            $('button').on('click', takeOrder); 
+           function takeOrder(){
+            var orderNumber = prompt('gum-gum....WHAT YOU WANT'); 
+            var total = 0;
+            if (orderNumber === '1') {
+                alert ('yare yare daze, gimme yo berries')
+         total += 6.99;
+            } else if (orderNumber === '2') {
+                alert ('yare yare daze, gimme yo berries')
+        total += 9.99;
+            } else if (orderNumber === '3') {
+                alert ('yare yare daze, gimme yo berries')
+        total += 0
+            } else if (orderNumber === '4') {
+                alert ('yare yare daze, gimme yo berries')
+        total += 100
+            } else {
+             alert('what a drag, you chose something we dont have');
+             
+        }
+        alert('The total for your order is ' + total + '. Here you go, have a bizzare day! Come back again, Believe it!');
+    }
+        </script>
+    </body>
+</html>
